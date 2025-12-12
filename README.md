@@ -1,4 +1,4 @@
-# 🧬 DNA Analyzer — MIT Style Sequence Validation (Java)
+# 🧬 DNA Analyzer — Sequence Validation (Java)
 
 Bu proje, MIT tarzı problem setlerinden ve hesaplamalı biyoloji (computational biology) yaklaşımından ilham alınarak hazırlanmış bir DNA dizisi analiz uygulamasıdır. Program, kullanıcıdan alınan DNA dizisini karakter seviyesinde inceleyerek doğrulama ve analiz işlemleri gerçekleştirir.
 
