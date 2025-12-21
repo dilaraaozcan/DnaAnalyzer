@@ -1,72 +1,81 @@
 # 🧬 DNA Analyzer — Sequence Validation (Java)
 
-Bu proje, MIT tarzı problem setlerinden ve hesaplamalı biyoloji (computational biology) yaklaşımından ilham alınarak hazırlanmış bir DNA dizisi analiz uygulamasıdır. Program, kullanıcıdan alınan DNA dizisini karakter seviyesinde inceleyerek doğrulama ve analiz işlemleri gerçekleştirir.
+This project is a DNA sequence analysis application inspired by MIT-style problem sets and a computational biology approach. The program examines a user-provided DNA sequence at the character level to perform validation and detailed analysis.
 
 ---
 
-## 🎯 Projenin Amacı
+## 🎯 Project Objective
 
-- DNA dizisinin yalnızca geçerli bazlardan (A, C, G, T) oluşup oluşmadığını kontrol etmek
-- Geçersiz bir karakter varsa ilk hatayı ve indeksini raporlamak
-- Geçerli bir DNA dizisi için detaylı analiz raporu üretmek
-- Algoritmik düşünme, döngü ve karakter işleme pratiği kazanmak
-
----
-
-## 🧠 Program Neler Yapar?
-
-- Kullanıcıdan bir DNA dizisi alır
-- Küçük harfleri otomatik olarak büyük harfe çevirir
-- DNA dizisini karakter karakter tarar (charAt)
-- A, C, G ve T bazlarını ayrı ayrı sayar
-- İlk geçersiz karakteri ve indeksini tespit eder
-- DNA geçerliyse:
-  - Toplam uzunluğu hesaplar
-  - Her bazın sayısını yazdırır
-  - En fazla görülen bazı bulur
-  - GC içeriği yüzdesini hesaplar
+- Verify whether a DNA sequence consists only of valid bases (A, C, G, T)
+- Report the first invalid character and its index if an error is found
+- Generate a detailed analysis report for a valid DNA sequence
+- Practice algorithmic thinking, loops, and character-level processing
 
 ---
 
-## 🧪 DNA Doğrulama Kuralları
+## 🧠 What the Program Does
 
-Geçerli bir DNA dizisi yalnızca aşağıdaki karakterleri içerebilir:
+- Takes a DNA sequence from the user
+- Automatically converts lowercase letters to uppercase
+- Scans the DNA sequence character by character (using charAt)
+- Counts A, C, G, and T bases separately
+- Detects the first invalid character and its index
+- If the DNA sequence is valid:
+  - Calculates the total length
+  - Prints the count of each nucleotide
+  - Identifies the most frequent nucleotide
+  - Calculates the GC content percentage
+
+---
+
+## 🧪 DNA Validation Rules
+
+A valid DNA sequence may contain only the following characters:
 
 - A
 - C
 - G
 - T
 
-Bu karakterler dışındaki herhangi bir giriş DNA’yı geçersiz kılar.
+Any character outside this set makes the DNA sequence invalid.
 
 ---
 
-## 📌 Örnek Kullanım
+## 📌 Example Usage
 
-Geçerli DNA girdisi:
+Valid DNA input:
 AACGTAGT
 
-Program çıktısı:
-DNA dizisi geçerlidir.
-Toplam uzunluk: 8
-A sayısı: 3
-C sayısı: 1
-G sayısı: 2
-T sayısı: 2
-En fazla görülen baz: A (3 adet)
-GC içeriği: %37.50
+Program output:
+The DNA sequence is valid.
+Total length: 8
+Count of A: 3
+Count of C: 1
+Count of G: 2
+Count of T: 2
+Most frequent base: A (3 occurrences)
+GC content: 37.50%
 
-Geçersiz DNA girdisi:
+Invalid DNA input:
 AACXGT
 
-Program çıktısı:
-Geçersiz DNA dizisi.
-Geçersiz karakter: X
-Hata indeksi: 3
+Program output:
+Invalid DNA sequence.
+Invalid character: X
+Error index: 3
 
 ---
 
-## 📁 Proje Yapısı
+## 📸 Sample Output
+
+Below is an example screenshot taken from an actual program execution.
+
+<img width="293" height="494" alt="image" src="https://github.com/user-attachments/assets/9a39785a-d3d5-4ba3-8a27-9e15d9882536" />
+
+
+---
+
+## 📁 Project Structure
 
 DNA-Analyzer/
 └── src/
@@ -74,10 +83,12 @@ DNA-Analyzer/
 
 ---
 
-## ▶️ Çalıştırma
+## ▶️ How to Run
 
-Bu proje IntelliJ IDEA veya herhangi bir Java IDE kullanılarak Main.java dosyası üzerinden çalıştırılabilir. Ek kütüphane veya harici bağımlılık gerektirmez.
+This project can be executed by running the Main.java file using IntelliJ IDEA or any Java-compatible IDE. No external libraries or dependencies are required.
 
 ---
 
-Bu proje, Java dilinde karakter tabanlı analiz, döngü kullanımı, koşul yapıları ve veri doğrulama mantığını öğrenmek isteyenler için akademik ve öğretici bir örnek sunar.
+This project provides an academic and instructional example for learning character-based analysis, loop usage, conditional logic, and data validation in Java.
+
+—-
